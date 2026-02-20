@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sudikshya ❤️ Sanam</title>
+<meta charset="UTF-8">
+<style>
+body{
+margin:0;
+font-family: Arial;
+text-align:center;
+background:linear-gradient(to right,#ff758c,#ff7eb3);
+color:white;
+overflow-x:hidden;
+}
+
+h1{
+margin-top:40px;
+font-size:45px;
+}
+
+.section{
+margin-top:40px;
+}
+
+img{
+width:300px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+video{
+width:400px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+button{
+margin-top:30px;
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4e8a;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff4e8a;
+color:white;
+}
+
+.quote{
+font-style:italic;
+margin-top:20px;
+font-size:22px;
+}
+
+.reason{
+margin-top:10px;
+font-size:20px;
+}
+
+.heart{
+position:fixed;
+color:red;
+animation:float 5s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-10vh);}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Sudikshya ❤️ Sanam</h1>
+<h2>Forever & Always 💍</h2>
+<h3>Anniversary: August 19 💖</h3>
+
+<div class="section">
+<p>
+Sudikshya, you are the best thing that ever happened to me.  
+You make me laugh, you make me smile, and you make my life complete.  
+I promise to love you more every single day 💕
+</p>
+</div>
+
+<div class="section">
+<h2>Our Beautiful Memory 📸</h2>
+<img src="photo.jpg">
+</div>
+
+<div class="section">
+<h2>Our Special Video 🎥</h2>
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="section">
+<h2>Why I Love You 💖</h2>
+<div class="reason">💞 Your smile makes my day brighter.</div>
+<div class="reason">💞 You understand me like no one else.</div>
+<div class="reason">💞 You are cute even when you are angry 😜</div>
+<div class="reason">💞 You are my peace and my happiness.</div>
+</div>
+
+<div class="section">
+<h2>Love Quotes 🌹</h2>
+<div class="quote">"I found my home in your heart." ❤️</div>
+<div class="quote">"Every love story is beautiful, but ours is my favorite." 💍</div>
+<div class="quote">"If I know what love is, it is because of you." 💕</div>
+</div>
+
+<div class="section">
+<button onclick="surprise1()">Click for Surprise 🎁</button>
+<br>
+<button onclick="surprise2()">Important Question 😄</button>
+</div>
+
+<script>
+function surprise1(){
+alert("Sudikshya ❤️ I Love You So Much! Forever Yours, Sanam 💍");
+}
+
+function surprise2(){
+let answer = prompt("Will you love Sanam forever? 😌 (yes only)");
+if(answer == "yes"){
+alert("Correct Answer 😍 You are my forever!");
+}
+else{
+alert("Wrong answer 😜 Try again!");
+}
+}
+
+setInterval(function(){
+let heart = document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=Math.random()*30+20+"px";
+document.body.appendChild(heart);
+setTimeout(()=>{heart.remove();},5000);
+},500);
+</script>
+
+</body>
+</html>
